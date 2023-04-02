@@ -3,23 +3,24 @@ package scenarioTest;
 import personnages.Gaulois;
 import produits.Poisson;
 import produits.Sanglier;
-import villagegaulois.Etal;
+import village.Village;
+import villagegauloisold.Etal;
+import villagegauloisold.IEtal;
 
 public class Scenario {
 
 	public static void main(String[] args) {
 
 		// TODO Partie 4 : creer de la classe anonyme Village
-
+		Village village = new Village();
 		// fin
-
 		Gaulois ordralfabetix = new Gaulois("Ordralfabétix", 9);
 		Gaulois obelix = new Gaulois("Obélix", 20);
 		Gaulois asterix = new Gaulois("Astérix", 6);
 
-		Etal<Sanglier> etalSanglierObelix = new Etal<>();
-		Etal<Sanglier> etalSanglierAsterix = new Etal<>();
-		Etal<Poisson> etalPoisson = new Etal<>();
+		IEtal<Sanglier> etalSanglierObelix = new Etal<>();
+		IEtal<Sanglier> etalSanglierAsterix = new Etal<>();
+		IEtal<Poisson> etalPoisson = new Etal<>();
 
 		Sanglier sanglier1 = new Sanglier(2000, obelix);
 		Sanglier sanglier2 = new Sanglier(1500, obelix);
